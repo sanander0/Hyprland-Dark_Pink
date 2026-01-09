@@ -1,0 +1,119 @@
+* {
+    /* otf-font-awesome и SpaceMono Nerd Font должны быть установлены */
+    font-family: "Fira Sans Semibold", FontAwesome, "SpaceMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    transition: all 0.25s ease-out;
+}
+
+window#waybar {
+    background: transparent;
+    color: #E16D99;                      /* foreground */
+    font-family: "SpaceMono Nerd Font", feather;
+    transition: background-color 0.4s ease;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    /* background=19111b с прозрачностью */
+    background: rgba(25, 17, 27, 0.85);   
+    margin: 6px 10px;
+    padding: 0 6px;
+    border-radius: 14px;
+    /* regular1=C11F5A для более строгого бордера на темном */
+    border: 1px solid #C11F5A;           
+    /* Тень на основе regular1 для эффекта свечения */
+    box-shadow: 0 2px 8px rgba(193, 31, 90, 0.3); 
+}
+
+.modules-left {
+    padding: 0 4px;
+}
+
+.modules-center {
+    padding: 0 10px;
+}
+
+/* Основные модули */
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#language,
+#mpd {
+    padding: 0 10px;
+    /* bright5=FFCFF4 — светлый розовый, чтобы текст "горел" на темном */
+    color: #FFCFF4;                     
+    border-radius: 12px;
+}
+
+#clock:hover,
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#disk:hover,
+#temperature:hover,
+#backlight:hover,
+#network:hover,
+#pulseaudio:hover,
+#wireplumber:hover,
+#custom-media:hover,
+#tray:hover,
+#mode:hover,
+#idle_inhibitor:hover,
+#scratchpad:hover,
+#power-profiles-daemon:hover,
+#language:hover,
+#mpd:hover {
+    /* regular0=666666 для выделения при наведении */
+    background: rgba(102, 102, 102, 0.4); 
+    color: #FFC0E6; /* regular5 */
+}
+
+/* Рабочие столы */
+#workspaces button {
+    background: transparent;
+    font-family: "SpaceMono Nerd Font", feather;
+    font-weight: 900;
+    font-size: 13pt;
+    color: #B39FD6;                     /* regular4 (лавандовый) */
+    padding: 0 8px;
+    margin: 0 2px;
+    border-radius: 10px;
+    min-width: 28px;
+}
+
+#workspaces button.active {
+    background: #C11F5A;                /* regular1 для активного воркспейса */
+    color: #19111b;                     /* Цвет фона для текста внутри активной кнопки */
+}
+
+#workspaces button:hover {
+    background: #666666;                /* regular0 */
+    color: #77C4E8;                     /* regular6 (голубой акцент) */
+}
+
+/* Логотип (кастомный) */
+#custom-arch {
+    margin-left: 8px;
+    padding: 0 12px;
+    font-size: 22px;
+    color: #E16D99;                     /* foreground */
+    transition: color 0.4s ease;
+}
+
+#custom-arch:hover {
+    color: #77C4E8;                     /* regular6 (голубой перелив) */
+}

@@ -1,0 +1,27 @@
+window {
+  /* background=19111b */
+  background-color: #19111b;
+  /* regular1=C11F5A (темно-розовый для границ, чтобы не слепило) */
+  border: 2px solid #C11F5A;
+  border-radius: 0.75rem;
+}
+
+* {
+  /* foreground=E16D99 */
+  color: #E16D99;
+}
+
+#input {
+  /* regular0=666666 (темный серый для поля ввода) */
+  background-color: #666666; 
+  /* bright5=FFCFF4 (светло-розовый для читаемости текста в инпуте) */
+  color: #FFCFF4;                     
+  /* regular5=FFC0E6 */
+  border-color: #FFC0E6;              
+}
+
+#input:focus {
+  /* regular6=77C4E8 (голубой акцент при фокусе для контраста с розовым) */
+  border-color: #77C4E8;
+  box-shadow: 0 0 0 3px rgba(119, 196, 232, 0.4);
+}
